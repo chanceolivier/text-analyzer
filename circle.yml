@@ -1,0 +1,15 @@
+machine:
+  node:
+    version: 8.1.3
+
+dependencies:
+  override:
+    - cd front && npm install angular-cli
+
+# compile:
+#   pre:
+#     - cd front && npm run build
+
+test:
+  override:
+    - cd front && npm run test
