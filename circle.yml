@@ -1,10 +1,10 @@
 machine:
   node:
     version: 4.8.1
-    
+
 dependencies:
   override:
-    - npm install
+    - cd front && npm install
 
 test:
   override:
