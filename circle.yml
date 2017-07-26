@@ -4,4 +4,4 @@ machine:
 
 test:
   override:
-    - cd front && npm test
+    - cd front && npm run test
