@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   override:
-    - cd front && npm install angular-ci
+    - cd front && npm install angular-cli
 
 compile:
   pre:
