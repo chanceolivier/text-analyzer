@@ -6,9 +6,9 @@ dependencies:
   override:
     - cd front && npm install angular-cli
 
-compile:
-  pre:
-    - cd front && npm run build
+# compile:
+#   pre:
+#     - cd front && npm run build
 
 test:
   override:
