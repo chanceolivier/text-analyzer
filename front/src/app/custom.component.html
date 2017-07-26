@@ -1,4 +1,13 @@
 <div>
   <textarea [(ngModel)]="customText"></textarea>
   <div *ngIf="customText">{{ customText.length }}</div>
+  <input [(ngModel)]="idText"/>
+  <button (click)="saveText(customText)">Enregistrer ce texte</button>
+  <button (click)="getStatistics(idText)">Trouver les stats</button>
+  <br>
+  <br>
+  <p>{{ currentId }}</p>
+  <p>{{ stats }}</p>
+  <chart [options]="options"
+         (load)="saveInstance($event.context)"></chart>
 </div>
